@@ -101,7 +101,7 @@ body{
     linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75));
   background-image:
     linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.82)),
-    url("assets/hero.jpg");
+    url("/hero-1.png");
   background-size: cover;
   background-position: center;
   filter: saturate(1.02) contrast(1.02);
@@ -376,7 +376,7 @@ code{
   background-image:
     radial-gradient(900px 650px at 20% 20%, rgba(120,140,255,.14), transparent 55%),
     radial-gradient(900px 650px at 80% 30%, rgba(255,255,255,.08), transparent 55%),
-    url("assets/city.jpg");
+    url("/city.png");
   background-size: cover;
   background-position: center;
   filter: saturate(1.02) contrast(1.02);
@@ -392,7 +392,7 @@ code{
   background-image:
     radial-gradient(900px 650px at 25% 25%, rgba(255,255,255,.10), transparent 55%),
     radial-gradient(900px 650px at 70% 25%, rgba(120,140,255,.12), transparent 55%),
-    url("assets/city.jpg");
+    url("/city.png");
   opacity: .52;
 }
 .feature__overlay--alt{
