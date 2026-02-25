@@ -843,3 +843,24 @@ code{
 @media (max-width: 720px){
   .footer__inner{ flex-direction:column; }
 }
+/* ===== HERO CENTER DECLARATION ===== */
+
+.hero__row{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero__row--top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__cta{
+  justify-content: center;
+}
+
+.hero__row--bottom{
+  text-align: left;
+}
