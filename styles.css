@@ -633,7 +633,21 @@ body{
   .steps{ grid-template-columns: 1fr; }
   .topbar__nav{ display:none; }
 }
+/* Make linked step cards look identical to normal cards */
+a.stepCard{
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
 
+a.stepCard:visited{
+  color: inherit;
+}
+
+a.stepCard:hover{
+  color: inherit;
+  text-decoration: none;
+}
 /* Apply band uses city.png */
 .feature__bg{
   position:absolute;
