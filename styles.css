@@ -591,7 +591,7 @@ body{
   padding: 24px 20px;
   border-radius: 22px;
   border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
+  background: rgba(0,0,0,.45);
   box-shadow: var(--shadow2);
 }
 /* Steps */
