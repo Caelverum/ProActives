@@ -29,64 +29,137 @@
 
   <!-- HERO -->
   <section class="hero" id="top">
-    <!-- Uses hero.jpg if present; otherwise gradient still looks premium -->
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__overlay" aria-hidden="true"></div>
 
     <div class="container hero__content">
-      <p class="eyebrow">PRO-ACTIVES PROGRAM</p>
+      <!-- HERO ROW 1 (headline + CTA) -->
+      <div class="hero__row hero__row--top">
+        <p class="eyebrow">PRO-ACTIVES PROGRAM</p>
 
-      <h1 class="hero__title">
-        You set your own bar.<br />
-        And you live by it.
-      </h1>
+        <h1 class="hero__title">
+          You set your own bar.<br />
+          And you live by it.
+        </h1>
 
-      <p class="hero__lead">
-        You are not waiting to begin. You decided long ago you’re all in.
-      </p>
+        <p class="hero__lead">
+          You are not waiting to begin. You decided long ago you’re all in.
+        </p>
 
-      <div class="hero__stack">
-        <span>Training.</span>
-        <span>Building.</span>
-        <span>Learning.</span>
-        <span>Refining.</span>
-        <span>Progressing.</span>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#apply">Continue to Step 1</a>
+          <a class="btn btn--ghost" href="#how">Review Program Structure</a>
+        </div>
+
+        <div class="hero__note">
+          <span class="dot"></span>
+          Designed for disciplined operators. Not hype. Not theatre. Real process.
+        </div>
       </div>
 
-      <p class="hero__body">
-        Even when no one is looking.<br />
-        Even when it gets repetitive.<br />
-        Even when doubt shows up.
-      </p>
+      <!-- HERO ROW 2 (breathing room for body text) -->
+      <div class="hero__row hero__row--bottom">
+        <div class="hero__stack">
+          <span>Training.</span>
+          <span>Building.</span>
+          <span>Learning.</span>
+          <span>Refining.</span>
+          <span>Progressing.</span>
+        </div>
 
-      <p class="hero__body">
-        You no longer build for attention.<br />
-        You build because that’s your standard.
-      </p>
+        <p class="hero__body">
+          Even when no one is looking.<br />
+          Even when it gets repetitive.<br />
+          Even when doubt shows up.
+        </p>
 
-      <p class="hero__body">
-        If this reads as normal to you —<br />
-        The Pro-actives Program was built with you in mind.
-      </p>
+        <p class="hero__body">
+          You no longer build for attention.<br />
+          You build because that’s your standard.
+        </p>
 
-      <p class="hero__body hero__body--muted">
-        You were doing and funding this before we all came along.<br />
-        The program introduces structured sponsorship around what you’re already building.
-      </p>
+        <p class="hero__body">
+          If this reads as normal to you —<br />
+          The Pro-actives Program was built with you in mind.
+        </p>
 
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#apply">Continue to Step 1</a>
-        <a class="btn btn--ghost" href="#how">Review Program Structure</a>
-      </div>
-
-      <div class="hero__note">
-        <span class="dot"></span>
-        Designed for disciplined operators. Not hype. Not theatre. Real process.
+        <p class="hero__body hero__body--muted">
+          You were doing and funding this before we all came along.<br />
+          The program introduces structured sponsorship around what you’re already building.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Recognition / Context (short, modern) -->
+  <!-- 3-COLUMN STRIP (Mockup rhythm) -->
+  <section class="strip3" id="how">
+    <div class="container">
+      <div class="strip3__grid">
+        <!-- HOW IT WORKS -->
+        <div class="strip3__cell">
+          <div class="strip3__title">HOW IT WORKS</div>
+          <p class="strip3__lead">Focused sponsorship.<br />Managed by Caelverum.</p>
+
+          <ul class="strip3__list">
+            <li>vet participants</li>
+            <li>structure sponsorship Components</li>
+            <li>align brand partnerships</li>
+            <li>define activation standards</li>
+            <li>manage contracts and payments</li>
+            <li>oversee reporting and delivery</li>
+          </ul>
+
+          <p class="strip3__muted">
+            You focus on your work.<br />
+            We manage the bridge.
+          </p>
+        </div>
+
+        <!-- WHAT PRO-ACTIVE MEANS -->
+        <div class="strip3__cell">
+          <div class="strip3__title">WHAT “PRO-ACTIVE” MEANS</div>
+          <p class="strip3__lead">Internally driven.<br />Self-accountable.<br />Consistent in execution.</p>
+
+          <ul class="strip3__list strip3__list--ticks">
+            <li>internally directed</li>
+            <li>self-accountable</li>
+            <li>consistent without supervision</li>
+            <li>dependable</li>
+            <li>action is your currency</li>
+            <li>willing to step up for those who support you</li>
+            <li>capable of operating within defined agreements</li>
+          </ul>
+
+          <div class="strip3__centerline">ACTION OVER WORDS.</div>
+        </div>
+
+        <!-- WHAT SUPPORT LOOKS LIKE -->
+        <div class="strip3__cell">
+          <div class="strip3__title">WHAT SUPPORT LOOKS LIKE</div>
+          <p class="strip3__lead">Defined Components.<br />Amplified Momentum.</p>
+
+          <ul class="strip3__list">
+            <li>gym or training membership</li>
+            <li>competition or event entry</li>
+            <li>travel and accommodation</li>
+            <li>production costs</li>
+            <li>content development support</li>
+          </ul>
+
+          <p class="strip3__muted">
+            Each Component carries agreed activation expectations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Optional: big visual row under the 3 columns (keeps your compass image, but cinematic) -->
+      <div class="visualBand">
+        <img class="visualBand__img" src="/compass.png" alt="Directional graphic" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Recognition / Context (kept, wider + calmer) -->
   <section class="section section--soft">
     <div class="container">
       <div class="panel panel--wide">
@@ -99,152 +172,10 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section" id="how">
-    <div class="container">
-      <div class="grid grid--2">
-        <div class="panel">
-          <h2 class="h2">How It Works</h2>
-          <p class="p">
-            Sponsorship is structured through Caelverum.<br />
-            You are not expected to source or negotiate brand agreements independently.
-          </p>
-
-          <ul class="list">
-            <li>vet participants</li>
-            <li>structure sponsorship Components</li>
-            <li>align brand partnerships</li>
-            <li>define activation standards</li>
-            <li>manage contracts and payments</li>
-            <li>oversee reporting and delivery</li>
-          </ul>
-
-          <p class="p p--muted">
-            You focus on your work.<br />
-            We manage the bridge.
-          </p>
-        </div>
-
-        <div class="panel panel--media">
-          <div class="mediaCard">
-            <img class="mediaCard__img" src="/compass.png" alt="Directional graphic" />
-            <div class="mediaCard__cap">
-              <div class="mediaCard__capTitle">Internally directed</div>
-              <div class="mediaCard__capText">
-                The system exists to support your standard — not replace it.
-              </div>
-            </div>
-          </div>
-
-          <div class="hint">
-            If your compass image isn’t ready yet, drop any placeholder called
-            <code>assets/compass.png</code> and we’ll replace it later.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRO-ACTIVE MEANS -->
-  <section class="section section--band">
-    <div class="container">
-      <div class="grid grid--2">
-        <div class="panel panel--band">
-          <h2 class="h2">What “Pro-active” Means Here</h2>
-          <p class="p">
-            Pro-active describes behaviour.<br />
-            An attitude. A particular headspace.
-          </p>
-
-          <ul class="list list--ticks">
-            <li>internally directed</li>
-            <li>self-accountable</li>
-            <li>consistent without supervision</li>
-            <li>dependable</li>
-            <li>action is your currency</li>
-            <li>willing to step up for those who support you</li>
-            <li>capable of operating within defined agreements</li>
-          </ul>
-
-          <p class="p p--muted">This program recognises sustained execution.</p>
-        </div>
-
-        <div class="panel panel--band">
-          <h3 class="h3">This is not about potential.</h3>
-          <p class="p">
-            You don’t need to be loud.<br />
-            You don’t need to perform.<br />
-            You don’t need a huge following.
-          </p>
-          <p class="p p--muted">
-            Selection is based on discipline, consistency, and visible real-world doing.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SUPPORT COMPONENTS -->
-  <section class="section" id="support">
-    <div class="container">
-      <div class="grid grid--2">
-        <div class="panel">
-          <h2 class="h2">What Support Looks Like</h2>
-          <p class="p">
-            Support is allocated in defined Components.
-          </p>
-
-          <ul class="list">
-            <li>gym or training membership</li>
-            <li>competition or event entry</li>
-            <li>travel and accommodation</li>
-            <li>production costs</li>
-            <li>content development support</li>
-          </ul>
-
-          <p class="p">
-            Each Component carries agreed activation expectations.
-          </p>
-
-          <p class="p p--muted">
-            You are no longer carrying everything alone.<br />
-            Others step in.<br />
-            Not to change your build. To strengthen it.<br />
-            Support amplifies momentum. It does not replace effort.
-          </p>
-        </div>
-
-        <div class="panel panel--media">
-          <div class="mediaStrip">
-            <div class="chip">Components</div>
-            <div class="chip">Activation</div>
-            <div class="chip">Standards</div>
-            <div class="chip">Reporting</div>
-          </div>
-
-          <div class="cardStack">
-            <div class="cardStack__card">
-              <div class="cardStack__title">Allocation</div>
-              <div class="cardStack__text">Support is structured, not random.</div>
-            </div>
-            <div class="cardStack__card">
-              <div class="cardStack__title">Clarity</div>
-              <div class="cardStack__text">Everyone knows what’s expected and why.</div>
-            </div>
-            <div class="cardStack__card">
-              <div class="cardStack__title">Integrity</div>
-              <div class="cardStack__text">Your work stays yours. Sponsorship stays clean.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- DOCUMENTATION BAND -->
   <section class="section section--feature" id="documentation">
-    <div class="feature__bg" aria-hidden="true"></div>
-    <div class="feature__overlay" aria-hidden="true"></div>
+    <div class="feature__bg feature__bg--doc" aria-hidden="true"></div>
+    <div class="feature__overlay feature__overlay--doc" aria-hidden="true"></div>
 
     <div class="container feature__content">
       <div class="feature__inner">
@@ -315,24 +246,24 @@
               <span class="quote__sub">Not coercion. Not policing. Clear agreements and clean delivery.</span>
             </div>
           </div>
+
+          <!-- texture is now a full-width feel via a small band -->
+          <div class="textureBand">
+            <img class="textureBand__img" src="/texture.png" alt="Subtle texture" />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PERFORMANCE (non-pushy, latest) -->
+  <!-- PERFORMANCE -->
   <section class="section section--band" id="performance">
     <div class="container">
       <div class="panel panel--wide panel--band">
         <h2 class="h2">Performance</h2>
 
-        <p class="p">
-          Share your real process.
-        </p>
-
-        <p class="p">
-          Support and visibility are naturally connected.
-        </p>
+        <p class="p">Share your real process.</p>
+        <p class="p">Support and visibility are naturally connected.</p>
 
         <p class="p">
           When travel is funded, the journey becomes part of the story.<br />
@@ -349,55 +280,6 @@
         <p class="p p--muted">
           Your visibility should feel aligned with the standard you already hold yourself to.
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- AUTONOMY -->
-  <section class="section" id="autonomy">
-    <div class="container">
-      <div class="grid grid--2">
-        <div class="panel">
-          <h2 class="h2">Autonomy</h2>
-          <p class="p">
-            You were doing this before we arrived.<br />
-            Even with sponsorship support, you remain responsible for your direction.
-          </p>
-
-          <p class="p">
-            Sponsors do not control your path.<br />
-            They benefit from it — as you benefit from their support.
-          </p>
-
-          <p class="p">Caelverum ensures:</p>
-          <ul class="list">
-            <li>professional standards</li>
-            <li>brand-safe integration</li>
-            <li>clear boundaries</li>
-            <li>structured expectations</li>
-          </ul>
-
-          <p class="p p--muted">
-            The framework exists to protect momentum — not control it.
-          </p>
-        </div>
-
-        <div class="panel panel--media">
-          <div class="mediaCard mediaCard--tall">
-           <img class="mediaCard__img" src="/texture.png" alt="Subtle texture" />
-            <div class="mediaCard__cap">
-              <div class="mediaCard__capTitle">Clean agreements</div>
-              <div class="mediaCard__capText">
-                Clear expectations. No mixed messages. No role confusion.
-              </div>
-            </div>
-          </div>
-
-          <div class="hint">
-            If you don’t have <code>assets/texture.png</code> yet, drop any subtle placeholder.
-            We’ll replace with the final pack later.
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -427,9 +309,7 @@
         </div>
       </div>
 
-      <p class="p center p--muted">
-        Approval reflects alignment with program standards.
-      </p>
+      <p class="p center p--muted">Approval reflects alignment with program standards.</p>
     </div>
   </section>
 
@@ -457,7 +337,6 @@
         </div>
 
         <div class="feature__actions">
-          <!-- Replace # with your actual form link -->
           <a class="btn btn--primary btn--lg" href="#" aria-label="Continue to Step 1 form">Continue to Step 1</a>
           <a class="btn btn--ghost btn--lg" href="#top">Back to top</a>
         </div>
