@@ -661,6 +661,14 @@ a.stepCard .stepCard__text{
   color: inherit !important;
   text-decoration: none !important;
 }
+.stepCard__stage{
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: .55;
+  margin-bottom: 10px;
+}
 /* Apply band uses city.png */
 .feature__bg{
   position:absolute;
