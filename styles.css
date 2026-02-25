@@ -648,6 +648,19 @@ a.stepCard:hover{
   color: inherit;
   text-decoration: none;
 }
+a.stepCard,
+a.stepCard:visited,
+a.stepCard:hover,
+a.stepCard:active{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a.stepCard .stepCard__title,
+a.stepCard .stepCard__text{
+  color: inherit !important;
+  text-decoration: none !important;
+}
 /* Apply band uses city.png */
 .feature__bg{
   position:absolute;
