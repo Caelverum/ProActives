@@ -580,17 +580,19 @@ body{
     padding: 86px 0;
   }
 }
-.standardStatement{
-  margin: 32px 0 50px;
+.standard__statement{
   text-align: center;
   font-weight: 800;
-  font-size: 22px;
-  letter-spacing: -0.01em;
-  padding: 24px 20px;
-  border-radius: 22px;
-  border: 1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.05);
-  box-shadow: var(--shadow2);
+  font-size: clamp(20px, 2.6vw, 32px);
+
+  color: #ffffff; /* brighter */
+
+  margin-top: 100px;
+  margin-bottom: 140px;
+
+  text-shadow:
+    0 14px 50px rgba(0,0,0,.8),
+    0 2px 0 rgba(0,0,0,.35);
 }
 /* Steps */
 .steps{
