@@ -723,7 +723,47 @@ code{
   margin: 10px 0;
   color: rgba(244,246,251,.88);
 }
+/* === TEXTURE BACKDROP SECTIONS (Autonomy / Standard / Pathway) === */
+.autonomy,
+.standard,
+.pathway{
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
 
+/* Background image layers */
+.autonomy__bg,
+.standard__bg,
+.pathway__bg{
+  position: absolute;
+  inset: 0;
+  background-image: url("/texture.png");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  opacity: .40; /* adjust strength */
+}
+
+/* Readability overlays */
+.autonomy__overlay,
+.standard__overlay,
+.pathway__overlay{
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(1200px 800px at 50% 30%, rgba(0,0,0,.10), rgba(0,0,0,.55) 60%, rgba(0,0,0,.78)),
+    linear-gradient(180deg, rgba(0,0,0,.28), rgba(0,0,0,.75));
+}
+
+/* Make sure content sits above */
+.autonomy .container,
+.standard .container,
+.pathway .container{
+  position: relative;
+  z-index: 2;
+}
 /* Footer */
 .footer{
   padding: 44px 0;
