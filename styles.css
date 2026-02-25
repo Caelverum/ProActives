@@ -110,7 +110,7 @@ body{
 .hero__content{
   position:relative;
   width: 100%;
-  padding: 96px 0 86px;
+  padding: 140px 0 86px;
 }
 .hero__row{ max-width: 980px; }
 .hero__row--top{ padding-bottom: 26px; }
