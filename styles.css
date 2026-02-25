@@ -530,7 +530,18 @@ body{
     padding: 86px 0;
   }
 }
-
+.standardStatement{
+  margin: 32px 0 50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  padding: 24px 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  box-shadow: var(--shadow2);
+}
 /* Steps */
 .steps{
   margin-top: 18px;
