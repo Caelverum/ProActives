@@ -899,3 +899,30 @@ code{
 .hero__row--bottom{
   text-align: left;
 }
+/* =========================================
+   SPONSORS PAGE IMAGE OVERRIDES
+   ========================================= */
+
+.page-sponsors .hero__bg {
+  background-image: url('/assets/images/herocorporate.png');
+}
+
+.page-sponsors .autonomy__bg {
+  background-image: url('/assets/images/precisioncorporate.png');
+}
+
+.page-sponsors .docHero__bg {
+  background-image: url('/assets/images/measurecorporate.png');
+}
+
+.page-sponsors .standard__bg {
+  background-image: url('/assets/images/boardroomcorporate.png');
+}
+
+.page-sponsors .perfHero__bg {
+  background-image: url('/assets/images/digitalcorporate.png');
+}
+
+.page-sponsors .pathway__bg {
+  background-image: url('/assets/images/networkscorporate.png');
+}
