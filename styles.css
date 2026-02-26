@@ -978,3 +978,6 @@ code{
   background-position: center;
   background-repeat: no-repeat;
 }
+.page-home .hero__overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
