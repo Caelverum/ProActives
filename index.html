@@ -7,22 +7,21 @@
   <meta name="description" content="Infrastructure for disciplined progress in an AI-shifting economy. One system. Three stakeholder roles." />
   <link rel="stylesheet" href="/styles.css" />
 
-  <!-- Minimal page-specific styles (kept inside this file so you don't have to touch styles.css) -->
   <style>
-    /* Homepage gateway tiles */
+    /* Homepage gateway tiles + billboard */
     .gateway{
       position: relative;
       overflow: hidden;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-      padding: 80px 0 110px;
+      padding: 70px 0 110px;
     }
     .gateway__grid{
       display:grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
-      margin-top: 26px;
+      margin-top: 0;
     }
     .portal{
       position: relative;
@@ -110,10 +109,40 @@
       font-weight: 900;
     }
 
+    .billboard{
+      margin-top: 46px;
+      padding: 34px 28px;
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.26);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      text-align: left;
+      max-width: 1040px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .billboard__big{
+      margin: 0 0 16px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.06;
+      font-size: clamp(30px, 3.6vw, 52px);
+      color: rgba(244,246,251,.96);
+    }
+    .billboard__text{
+      margin: 0;
+      color: rgba(244,246,251,.82);
+      max-width: 78ch;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
     /* Keep 3-across as long as possible, stack only on mobile */
     @media (max-width: 860px){
       .gateway__grid{ grid-template-columns: 1fr; }
       .portal{ min-height: 320px; }
+      .billboard{ padding: 28px 18px; }
     }
   </style>
 </head>
@@ -155,46 +184,17 @@
           One structured system connecting high-agency individuals, ethical corporate sponsorship, and scalable transition infrastructure.
         </p>
 
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#entry">
-            Choose your entry →
-          </a>
-          <a class="btn btn--ghost" href="https://ppsp-form.vercel.app" target="_blank" rel="noopener">
-            Continue
-          </a>
-        </div>
-
-        <div class="hero__note">
+        <div class="hero__note" style="justify-content:center;">
           <span class="dot"></span>
           One system. Three stakeholder roles.
         </div>
       </div>
-
-      <div class="hero__row hero__row--bottom">
-        <div class="hero__stack">
-          <span>Agency.</span>
-          <span>Execution.</span>
-          <span>Transparency.</span>
-          <span>Scalability.</span>
-          <span>Participation.</span>
-        </div>
-
-        <p class="hero__body">
-          AI is accelerating output.<br />
-          Execution capacity is becoming rare.
-        </p>
-
-        <p class="hero__body hero__body--muted">
-          The Pro-actives Program is designed to preserve self-governance and economic participation while aligning structured sponsorship around visible, real-world effort.
-        </p>
-      </div>
     </div>
   </section>
 
-  <!-- ENTRY PORTALS -->
+  <!-- ENTRY PORTALS + BILLBOARD -->
   <section class="gateway" id="entry">
     <div class="container">
-      <h2 class="h2 center">Select your role</h2>
 
       <div class="gateway__grid">
         <!-- GOVERNMENT (left) -->
@@ -242,6 +242,18 @@
           </div>
         </a>
       </div>
+
+      <div class="billboard">
+        <div class="billboard__big">
+          AI is accelerating output.<br />
+          Execution capacity is becoming rare.
+        </div>
+
+        <p class="billboard__text">
+          The Pro-actives Program is designed to preserve self-governance and economic participation while aligning structured sponsorship around visible, real-world effort.
+        </p>
+      </div>
+
     </div>
   </section>
 
