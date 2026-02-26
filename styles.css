@@ -1103,3 +1103,17 @@ code{
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.25);
 }
+/* Sponsors Tier Visual */
+
+.tier_visual{
+  margin: 28px 0 24px 0;
+  text-align: center;
+}
+
+.tier_visual img{
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
