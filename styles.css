@@ -1042,18 +1042,27 @@ code{
 }
 
 /* This block holds kicker + title + sub */
-.portal_meta{
-  margin-top: auto;
-}
-
-/* BIG + CENTERED label */
+/* Kicker stays fixed at top */
 .portal_kicker{
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+
   text-align: center;
   font-size: 18px;
   letter-spacing: 4px;
-  font-weight: 700;
-  opacity: 0.92;
-  margin-bottom: 14px;
+  font-weight: 750;
+  opacity: 0.95;
+
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* Title + subtitle block pushed downward */
+.portal_meta{
+  margin-top: auto;
+  padding-top: 60px; /* prevents collision with kicker */
 }
 
 /* Title + subtitle lowered + smaller */
