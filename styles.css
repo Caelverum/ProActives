@@ -943,3 +943,38 @@ code{
   background-position: center;
   background-repeat: no-repeat;
 }
+/* =========================================
+   HERO IMAGE OVERRIDES PER PAGE
+   ========================================= */
+
+/* HOME */
+.page-home .hero__bg {
+  background-image: url('/assets/images/herohome.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* GOVERNMENT */
+.page-government .hero__bg {
+  background-image: url('/assets/images/herogovt.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CORPORATE */
+.page-corporate .hero__bg {
+  background-image: url('/assets/images/herocorporate.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* PROACTIVE */
+.page-proactive .hero__bg {
+  background-image: url('/assets/images/hero-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
