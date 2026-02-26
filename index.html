@@ -1,8 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=/candidates/" />
-  <link rel="canonical" href="/candidates/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro-actives Program by Caelverum</title>
+  <meta name="description" content="Infrastructure for disciplined progress in an AI-shifting economy. One system. Three stakeholder roles." />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Minimal page-specific styles (kept inside this file so you don't have to touch styles.css) -->
+  <style>
+    /* Homepage gateway tiles */
+    .gateway{
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      padding: 80px 0 110px;
+    }
+    .gateway__grid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 26px;
+    }
+    .portal{
+      position: relative;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      overflow: hidden;
+      background: rgba(0,0,0,.22);
+      box-shadow: var(--shadow2);
+      min-height: 380px;
+      transition: .18s ease;
+    }
+    .portal:hover{
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.18);
+      box-shadow: var(--shadow);
+    }
+    .portal__bg{
+      position:absolute;
+      inset:0;
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.03);
+      filter: saturate(1.05) contrast(1.05);
+      opacity: .82;
+    }
+    .portal__overlay{
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(900px 520px at 50% 35%, rgba(0,0,0,.10), rgba(0,0,0,.55) 65%, rgba(0,0,0,.78)),
+        linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.60));
+    }
+    .portal__content{
+      position: relative;
+      z-index: 2;
+      padding: 26px 22px;
+      display:flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .portal__kicker{
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      opacity: .82;
+      margin: 0 0 10px;
+    }
+    .portal__title{
+      margin: 0 0 12px;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+      line-height: 1.08;
+      font-weight: 900;
+    }
+    .portal__sub{
+      margin: 0;
+      color: rgba(244,246,251,.86);
+      max-width: 40ch;
+    }
+    .portal__cta{
+      margin-top: auto;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: rgba(244,246,251,.78);
+      font-size: 13px;
+      letter-spacing:.04em;
+    }
+    .portal__arrow{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(0,0,0,.22);
+      color: rgba(244,246,251,.90);
+      font-weight: 900;
+    }
+
+    /* Keep 3-across as long as possible, stack only on mobile */
+    @media (max-width: 860px){
+      .gateway__grid{ grid-template-columns: 1fr; }
+      .portal{ min-height: 320px; }
+    }
+  </style>
 </head>
-<body></body>
+
+<body>
+  <!-- Top nav -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__mark">CAELVERUM</span>
+        <span class="brand__divider">/</span>
+        <span class="brand__sub">PRO-ACTIVES PROGRAM</span>
+      </div>
+
+      <nav class="topbar__nav">
+        <a href="/government" class="navlink">Government</a>
+        <a href="/candidates" class="navlink">Pro-active</a>
+        <a href="/sponsors" class="navlink">Corporate</a>
+        <a href="https://ppsp-form.vercel.app" class="navlink navlink--cta" target="_blank" rel="noopener">Continue</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="hero__row hero__row--top">
+        <p class="eyebrow">PRO-ACTIVES PROGRAM BY CAELVERUM</p>
+
+        <h1 class="hero__title">
+          Infrastructure for disciplined progress<br />
+          in an AI-shifting economy.
+        </h1>
+
+        <p class="hero__lead">
+          One structured system connecting high-agency individuals, ethical corporate sponsorship, and scalable transition infrastructure.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#entry">
+            Choose your entry →
+          </a>
+          <a class="btn btn--ghost" href="https://ppsp-form.vercel.app" target="_blank" rel="noopener">
+            Continue
+          </a>
+        </div>
+
+        <div class="hero__note">
+          <span class="dot"></span>
+          One system. Three stakeholder roles.
+        </div>
+      </div>
+
+      <div class="hero__row hero__row--bottom">
+        <div class="hero__stack">
+          <span>Agency.</span>
+          <span>Execution.</span>
+          <span>Transparency.</span>
+          <span>Scalability.</span>
+          <span>Participation.</span>
+        </div>
+
+        <p class="hero__body">
+          AI is accelerating output.<br />
+          Execution capacity is becoming rare.
+        </p>
+
+        <p class="hero__body hero__body--muted">
+          The Pro-actives Program is designed to preserve self-governance and economic participation while aligning structured sponsorship around visible, real-world effort.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTRY PORTALS -->
+  <section class="gateway" id="entry">
+    <div class="container">
+      <h2 class="h2 center">Select your role</h2>
+
+      <div class="gateway__grid">
+        <!-- GOVERNMENT (left) -->
+        <a class="portal" href="/government">
+          <div class="portal__bg" style="background-image:url('/texture.png');"></div>
+          <div class="portal__overlay" aria-hidden="true"></div>
+          <div class="portal__content">
+            <div class="portal__kicker">GOVERNMENT</div>
+            <div class="portal__title">Transition infrastructure</div>
+            <p class="portal__sub">Policy-aligned productivity and participation framework.</p>
+            <div class="portal__cta">
+              <span>View Government Landing Page</span>
+              <span class="portal__arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- PRO-ACTIVE (middle) -->
+        <a class="portal" href="/candidates">
+          <div class="portal__bg" style="background-image:url('/hero-1.png');"></div>
+          <div class="portal__overlay" aria-hidden="true"></div>
+          <div class="portal__content">
+            <div class="portal__kicker">PRO-ACTIVE</div>
+            <div class="portal__title">Structured sponsorship pathway</div>
+            <p class="portal__sub">For individuals who consistently execute and document real effort.</p>
+            <div class="portal__cta">
+              <span>View Candidates Landing Page</span>
+              <span class="portal__arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CORPORATE (right) -->
+        <a class="portal" href="/sponsors">
+          <div class="portal__bg" style="background-image:url('/city.png');"></div>
+          <div class="portal__overlay" aria-hidden="true"></div>
+          <div class="portal__content">
+            <div class="portal__kicker">CORPORATE</div>
+            <div class="portal__title">Sponsor disciplined progress</div>
+            <p class="portal__sub">Structured 12-month alignment with visible execution in high-trust communities.</p>
+            <div class="portal__cta">
+              <span>View Corporate Landing Page</span>
+              <span class="portal__arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="brand brand--footer">
+          <span class="brand__mark">CAELVERUM</span>
+          <span class="brand__divider">/</span>
+          <span class="brand__sub">PRO-ACTIVES PROGRAM</span>
+        </div>
+        <p class="footer__meta">© Caelverum Pty Ltd</p>
+      </div>
+
+      <div class="footer__right">
+        <a class="navlink" href="/government">Government</a>
+        <a class="navlink" href="/candidates">Pro-active</a>
+        <a class="navlink" href="/sponsors">Corporate</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
