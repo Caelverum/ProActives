@@ -926,3 +926,20 @@ code{
 .page-sponsors .pathway__bg {
   background-image: url('/assets/images/networkscorporate.png');
 }
+/* =========================================
+   GOVERNMENT PAGE IMAGE OVERRIDES
+   ========================================= */
+
+.page-government .hero__bg {
+  background-image: url('/assets/images/herogovt.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-government .perfHero__bg {
+  background-image: url('/assets/images/publicgovt.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
