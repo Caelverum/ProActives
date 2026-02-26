@@ -981,3 +981,71 @@ code{
 .page-home .hero__overlay {
   background: rgba(0, 0, 0, 0.55);
 }
+/* =========================================
+   HOMEPAGE PORTAL REFINEMENT
+   ========================================= */
+
+/* Make portal full-height flex container */
+.portal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enlarge and center GOVERNMENT / PRO-ACTIVE / CORPORATE */
+.portal_kicker {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Push main content to bottom */
+.portal_content {
+  margin-top: auto;
+  padding: 0 32px 36px 32px;
+}
+
+/* Lower the main bold heading */
+.portal_title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Lower subtitle */
+.portal_sub {
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 26px;
+  max-width: 90%;
+}
+
+/* Keep CTA at very bottom */
+.portal_cta {
+  margin-top: auto;
+}
+
+/* Stronger bottom gradient for image readability */
+.portal::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0)
+  );
+  pointer-events: none;
+}
